@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Edge in incognito mode",
+            "url": "http://localhost/setpronto/annunci.php",
+            "webRoot": "${workspaceFolder}",
+            "runtimeExecutable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe", // Ruta a tu ejecutable de Edge
+            "args": ["--inprivate"]
+        }
+    ]
+}

@@ -1,0 +1,232 @@
+
+/* Stili generali */
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stili per lo stato di approvazione */
+.approval-status {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.approved {
+    color: green;
+    background-color: #c8f9c8;
+}
+.not-approved {
+    color: red;
+    background-color: #f9c8c8;
+}
+.pending {
+    color: var(--colore-testo-marrone);
+    background-color: #fffbc8;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--colore-principale);
+    background-size: 100%, 100%;
+    border-radius: 70%;
+    border: 2px solid transparent;
+    height: 30px;
+    width: 30px;
+    position: relative; /* Aggiungi questa riga per la posizione fissa */
+    transform: translateY(-50%); /* Allinea verticalmente */
+    z-index: 1000;
+}
+
+/* Stili per l'annuncio */
+.announcement {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 54%;
+    height: auto; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 25px;
+    position: relative;
+  
+}
+@media (max-width: 1000px) {
+    .announcement {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: auto; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+  
+}
+}
+.left-column {
+    flex-grow: 1;
+    width: 60%; 
+    display: flex;
+    flex-direction: column;
+}
+.right-column {
+    flex-grow: 1;
+    width: 40%; 
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+ /* Stili per il carosello */
+ .carousel-inner img {
+    max-height: 500px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Aggiungi un po' di margine per lo spaziamento */
+}
+
+
+.carousel-container {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stili per la pagina */
+.page-container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    
+}
+.carousel-inner {
+    transition: none;
+}
+h1, h2, h3, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.btn-danger-container{
+    display: flex;
+    justify-content: flex-end; /* Esto alinea el contenido a la derecha */
+}
+.btn-danger {
+    background-color: var(--colore-danger);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+
+.btn-danger:hover {
+    color: var(--colore-danger);
+    background-color: var(--colore-a1);
+}
+
+.b-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: 10px;
+    margin-right: 10px;
+    justify-items: end;
+    width: 200px;
+
+}
+/* Estilos normales */
+.btn-filter {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.b-annunci {
+    background-color: var(--colore-secondario);
+}
+
+.b-inapprovazione {
+    background-color: var(--colore-yellow);
+}
+
+.b-approvati {
+    background-color: #5ec9a0;
+}
+
+.b-nonapprovati {
+    background-color: red;
+}
+
+.btn-filter:hover {
+    background-color: var(--colore-m3);
+    text-decoration: none;
+    color: var(--colore-testo)
+}
+
+
+.b-visualizza{
+    background-color: var(--colore-secondario);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+
+.b-visualizza:hover{
+    color: var(--colore-testo);
+    background-color: var(--colore-m3);
+}
+.comment .comment-text {
+    max-height: 150px; /* Altezza massima prima del taglio */
+    overflow: hidden;
+}
+
+.comment .read-more-button {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.annuncio_non_approvato {
+    border-radius: 10px;
+    width: 54%;
+    height: auto; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    position: relative;
+  
+}

@@ -1,0 +1,30 @@
+:root {
+  /* Complementary Color */
+    --colore-principale: #FFCC81; /* arancione */
+    --colore-secondario: #0B4D97; /* blue */
+  
+  /* Tetradic Color */
+  --colore-blue: #80B5FF;
+  --colore-green: #80FFCA;
+  --colore-pink: #FF80B5;
+  /* Split Complementary Color*/
+  --colore-s1: #EA80FF;
+  --colore-s2: #8080FF;
+  --colore-s3: #80EAFF;
+  /* Analogous */
+  --colore-a1: #FF8A80;
+  --colore-a2: #F4FF80;
+  /* Monochromatic Color */
+  --colore-m1: #BF9960;
+  --colore-m2: #FFE6C0;
+  --colore-m3: #FEF2DF;
+
+  --colore-nero: #0A0A0A;
+
+  --colore-hover: var(--colore-m2);
+  --colore-testo:  var(--colore-nero);
+  --colore-testo-marrone: #855C00;
+  --colore-danger: #dc3545;
+  --colore-yellow: #FFD700;
+
+  }
